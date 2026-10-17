@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modern Weather App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="card">
+    <!-- Search Box Section -->
+    <div class="search">
+      <input type="text" class="search-input" placeholder="Enter city name..." spellcheck="false" autocomplete="off">
+      <button class="search-btn" aria-label="Search">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <circle cx="11" cy="11" r="8"/>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Error Message Banner -->
+    <div class="error">
+      <p class="error-msg">Invalid city name!</p>
+    </div>
+
+    <!-- Weather Information Display -->
+    <div class="weather">
+      <!-- Unit Toggle Button -->
+      <button class="unit-toggle" id="unitBtn">Switch to °F</button>
+
+      <img src="https://cdn-icons-png.flaticon.com/512/1163/1163661.png" class="weather-icon" alt="Weather condition icon">
+      <h1 class="temp">--°C</h1>
+      <h2 class="city">--</h2>
+
+      <div class="details">
+        <div class="col">
+          <img src="https://cdn-icons-png.flaticon.com/512/728/728093.png" alt="Humidity Icon">
+          <div>
+            <p class="humidity">--%</p>
+            <p>Humidity</p>
+          </div>
+        </div>
+
+        <div class="col">
+          <img src="https://cdn-icons-png.flaticon.com/512/2011/2011448.png" alt="Wind Icon">
+          <div>
+            <p class="wind">-- km/h</p>
+            <p>Wind Speed</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
